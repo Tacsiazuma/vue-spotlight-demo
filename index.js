@@ -12,7 +12,7 @@ new Vue({
             renderer : (item, fieldName) => 
             `<img class="hit-result-image" src="https://picsum.photos/22"/><span>${item.symbol} - ${item.price}</span></li>`,
             dataProvider: (term) => fetch(
-                    "/real-time-price.json"
+                    "real-time-price.json"
                 ).then(
                     r => r.json()
                 )
