@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>vue</title>
+    </head>
+    <body>
+        <div id="app">
+            <button @click="openWidget">Open</button>
+            <button @click="closeWidget">Close</button>
+            <input type="text" placeholder="To prove tabbing/focus is still working"/>
+            <Spotlight field-name="symbol" :data-provider="dataProvider" :widget-open="open" :action="action" :match-renderer="renderer"/>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>
